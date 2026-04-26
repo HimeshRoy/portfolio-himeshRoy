@@ -61,8 +61,8 @@ const Projects = () => {
           about="A modern personal portfolio website built to showcase my projects, skills, and journey as a developer. Designed with clean UI, smooth interactions, and responsive layouts to create an engaging user experience."
           tools={["React / Vite", "Tailwind", "HTML5", "CSS"]}
           img={Potfilio}
-          live=""
-          github=""
+          live="https://himeshroy.vercel.app/"
+          github="https://github.com/HimeshRoy/portfolio-himeshRoy"
         />
       </section>
     </>
