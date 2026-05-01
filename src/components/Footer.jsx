@@ -12,12 +12,12 @@ import pfp from "../assets/pfp.png";
 const Footer = () => {
   return (
     <>
-      <section className="flex w-full my-5">
+      <section className="flex w-full my-2 bg-[#111d3b] rounded-lg py-3">
 
         <div className="w-3/4 flex items-center justify-start">
           <div className="flex items-center gap-6">
             
-            <img src={pfp} alt="" className="w-55 border-b-2 border-blue-950" />
+            <img src={pfp} alt="" className="w-55 border-blue-950 relative bottom-0" />
 
            
             <div className="pe-30">
