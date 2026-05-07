@@ -12,10 +12,10 @@ import pfp from "../assets/pfp.png";
 const Footer = () => {
   return (
     <>
-      <section className="flex w-full my-2 bg-[#111d3b] rounded-lg py-3">
+      <section className="flex flex-col lg:flex-row w-full my-2 bg-[#111d3b] rounded-lg py-6">
 
-        <div className="w-3/4 flex items-center justify-start">
-          <div className="flex items-center gap-6">
+       <div className="w-full lg:w-3/4 flex items-center justify-start">
+          <div className="flex flex-col md:flex-row items-center gap-6 px-5">
             
             <img src={pfp} alt="" className="w-55 border-blue-950 relative bottom-0" />
 
@@ -35,10 +35,10 @@ const Footer = () => {
         </div>
 
 
-        <div className="w-0.5 bg-blue-800 opacity-50"></div>
+        <div className="hidden lg:block w-0.5 bg-blue-800 opacity-50"></div>
 
         
-        <div className="w-1/2 flex items-center justify-start ps-5">
+        <div className="w-full lg:w-1/2 flex items-center justify-start px-5 mt-8 lg:mt-0">
           <div>
             <h1 className="text-xl text-blue-400 flex items-center gap-1">
               <IoLocationSharp />

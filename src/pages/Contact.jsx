@@ -43,7 +43,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="flex justify-around">
+      <div className="flex flex-col lg:flex-row justify-around gap-10">
         <section className="flex items-center justify-center px-4">
           <div className="w-full max-w-2xl bg-[#0b1220] border border-blue-500/20 rounded-2xl p-8">
             <h2 className="text-2xl font-bold mb-6 text-gray-200">

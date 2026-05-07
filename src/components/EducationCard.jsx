@@ -34,7 +34,7 @@ const EducationCard = ({
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: false, amount: 0.3 }}
-      className="w-full flex justify-center px-5 mb-20"
+      className="w-full flex justify-center px-3 sm:px-5 mb-10 sm:mb-20"
     >
       <motion.div
         variants={cardVariants}
@@ -42,15 +42,22 @@ const EducationCard = ({
           relative
           w-full
           max-w-6xl
-          h-125
-          rounded-[35px]
+
+          h-[350px]
+          sm:h-[450px]
+          lg:h-[500px]
+
+          rounded-[25px]
+          sm:rounded-[35px]
+
           overflow-hidden
           border border-white/10
+
           shadow-[0_0_40px_rgba(59,130,246,0.15)]
+
           group
         "
       >
-
         {/* IMAGE */}
         <img
           src={img}
@@ -61,7 +68,10 @@ const EducationCard = ({
             w-full
             h-full
             object-cover
-            transition duration-700
+
+            transition
+            duration-700
+
             group-hover:scale-105
           "
         />
@@ -70,52 +80,108 @@ const EducationCard = ({
         <div className="absolute inset-0 bg-black/60"></div>
 
         {/* BLUE GLOW */}
-        <div className="absolute inset-0 bg-linear-to-br from-blue-500/20 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-transparent"></div>
 
         {/* CONTENT */}
         <div
           className={`
             absolute
-            top-1/2
-            -translate-y-1/2
             z-10
-            ${align === "right" ? "right-10" : "left-10"}
+
+            bottom-5
+            left-1/2
+            -translate-x-1/2
+
+            md:top-1/2
+            md:-translate-y-1/2
+            md:bottom-auto
+            md:translate-x-0
+
+            ${
+              align === "right"
+                ? "md:right-10 md:left-auto"
+                : "md:left-10"
+            }
           `}
         >
-
           <div
             className="
-              w-105
+              w-[90vw]
+              max-w-[430px]
+
               bg-white/10
               backdrop-blur-2xl
-              border border-white/10
-              rounded-3xl
-              p-8
+
+              border
+              border-white/10
+
+              rounded-2xl
+              lg:rounded-3xl
+
+              p-5
+              sm:p-6
+              lg:p-8
+
               shadow-[0_0_30px_rgba(59,130,246,0.2)]
             "
           >
+            <h1
+              className="
+                text-3xl
+                sm:text-4xl
+                lg:text-5xl
 
-            <h1 className="text-5xl font-bold text-blue-300 leading-tight">
+                font-bold
+                text-blue-300
+                leading-tight
+              "
+            >
               {title}
             </h1>
 
-            <p className="text-gray-300 text-lg mt-3">
+            <p
+              className="
+                text-gray-300
+                text-sm
+                sm:text-base
+                lg:text-lg
+
+                mt-3
+              "
+            >
               {location}
             </p>
 
-            <div className="w-20 h-0.5 bg-blue-400 rounded-full my-6"></div>
+            <div className="w-20 h-0.5 bg-blue-400 rounded-full my-4 sm:my-6"></div>
 
-            <h2 className="text-3xl text-white leading-snug">
+            <h2
+              className="
+                text-xl
+                sm:text-2xl
+                lg:text-3xl
+
+                text-white
+                leading-snug
+              "
+            >
               {course}
             </h2>
 
-            <p className="text-gray-400 mt-5 text-lg">
+            <p
+              className="
+                text-gray-400
+                mt-4
+                sm:mt-5
+
+                text-sm
+                sm:text-base
+                lg:text-lg
+              "
+            >
               {year}
             </p>
-
           </div>
         </div>
-
       </motion.div>
     </motion.div>
   );

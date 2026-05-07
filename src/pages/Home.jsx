@@ -15,7 +15,7 @@ const Home = () => {
       >
         <div className=" flex flex-col justify-start items-start z-10 max-w-xl">
           <motion.h1
-            className="text-9xl font-bold leading-tight"
+           className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-tight"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -23,7 +23,7 @@ const Home = () => {
             Hey, I'm{" "}
             <span className="text-blue-400 flex items-center">
               Himesh.
-              <span className="font-light text-8xl ml-1 animate-[blink_2s_infinite]">
+              <span className="font-light md:text-5xl lg:text-8xl ml-1 animate-[blink_2s_infinite]">
                 |
               </span>
             </span>

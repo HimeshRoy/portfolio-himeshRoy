@@ -10,7 +10,7 @@ import Potfilio from "../assets/potfolio.png";
 const Projects = () => {
   return (
     <>
-      <section className="p-5 grid grid-cols-3 gap-10">
+      <section className="p-5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
         <ProjectCard
           title="Loom"
           about="A responsive e-commerce platform with clean UI, product browsing, and smooth user experience."
