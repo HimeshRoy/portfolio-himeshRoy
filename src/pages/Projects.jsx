@@ -7,6 +7,8 @@ import RPS from "../assets/rockPaper.png";
 import Craveo from "../assets/craveo.png";
 import Potfilio from "../assets/potfolio.png";
 import BananaReview from "../assets/bananaReview.png";
+import CookingPage from "../assets/cookingPage.png";
+
 const Projects = () => {
   return (
     <>
@@ -35,14 +37,14 @@ const Projects = () => {
           about="A web-based ERP system designed to manage business processes, user data, and workflow operations efficiently."
           tools={["HTML5", "Bootstrap", "CSS", "JavaScript"]}
           img={ERP}
-          live="dsbg"
-          github="fbd"
+          live="https://erp-chi-sooty.vercel.app/"
+          github="https://github.com/HimeshRoy/ERP"
         />
 
         <ProjectCard
           title="Banana Review"
           about="A responsive movie and series review platform with clean UI browsing, and smooth user experience."
-          tools={["React", "Tailwindcss", "Framer Motion"]}
+          tools={["React / Vite", "Tailwindcss", "Framer Motion"]}
           img={BananaReview}
           live="https://banana-review.vercel.app/"
           github="https://github.com/HimeshRoy/Banana-Review"
@@ -69,10 +71,19 @@ const Projects = () => {
         <ProjectCard
           title="Personal Portfolio"
           about="A modern personal portfolio website built to showcase my projects, skills, and journey as a developer. Designed with clean UI, smooth interactions, and responsive layouts to create an engaging user experience."
-          tools={["React / Vite", "Tailwind", "HTML5", "CSS"]}
+          tools={["React / Vite", "Tailwind", "HTML5", "CSS",  "Framer Motion"]}
           img={Potfilio}
           live="https://himeshroy.vercel.app/"
           github="https://github.com/HimeshRoy/portfolio-himeshRoy"
+        />
+
+        <ProjectCard
+          title="Cooking Page"
+          about="Design Recipe page website built with React, Tailwind and API is used for data."
+          tools={["React / Vite", "Tailwind"]}
+          img={CookingPage}
+          live="https://recipe-page-tau-ochre.vercel.app/"
+          github="https://github.com/HimeshRoy/RECIPE-API-CALL"
         />
       </section>
     </>
