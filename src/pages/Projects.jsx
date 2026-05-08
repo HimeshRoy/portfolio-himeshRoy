@@ -6,7 +6,7 @@ import ERP from "../assets/erp.png";
 import RPS from "../assets/rockPaper.png";
 import Craveo from "../assets/craveo.png";
 import Potfilio from "../assets/potfolio.png";
-import BananaReview from "../assets/BananaReview.png";
+import BananaReview from "../assets/bananaReview.png";
 const Projects = () => {
   return (
     <>
@@ -42,7 +42,7 @@ const Projects = () => {
         <ProjectCard
           title="Banana Review"
           about="A responsive movie and series review platform with clean UI browsing, and smooth user experience."
-          tools={["React", "Tailwindcss", "Frame-Motion"]}
+          tools={["React", "Tailwindcss", "Framer Motion"]}
           img={BananaReview}
           live="https://banana-review.vercel.app/"
           github="https://github.com/HimeshRoy/Banana-Review"
