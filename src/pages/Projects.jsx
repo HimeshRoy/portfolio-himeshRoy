@@ -6,11 +6,12 @@ import ERP from "../assets/erp.png";
 import RPS from "../assets/rockPaper.png";
 import Craveo from "../assets/craveo.png";
 import Potfilio from "../assets/potfolio.png";
-
+import BananaReview from "../assets/BananaReview.png";
 const Projects = () => {
   return (
     <>
       <section className="p-5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+        
         <ProjectCard
           title="Loom"
           about="A responsive e-commerce platform with clean UI, product browsing, and smooth user experience."
@@ -36,6 +37,15 @@ const Projects = () => {
           img={ERP}
           live="dsbg"
           github="fbd"
+        />
+
+        <ProjectCard
+          title="Banana Review"
+          about="A responsive movie and series review platform with clean UI browsing, and smooth user experience."
+          tools={["React", "Tailwindcss", "Frame-Motion"]}
+          img={BananaReview}
+          live="https://banana-review.vercel.app/"
+          github="https://github.com/HimeshRoy/Banana-Review"
         />
 
         <ProjectCard
