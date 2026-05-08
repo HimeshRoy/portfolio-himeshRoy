@@ -8,6 +8,7 @@ import Craveo from "../assets/craveo.png";
 import Potfilio from "../assets/potfolio.png";
 import BananaReview from "../assets/bananaReview.png";
 import CookingPage from "../assets/cookingPage.png";
+import musicApp from "../assets/musicApp.png";
 
 const Projects = () => {
   return (
@@ -84,6 +85,15 @@ const Projects = () => {
           img={CookingPage}
           live="https://recipe-page-tau-ochre.vercel.app/"
           github="https://github.com/HimeshRoy/RECIPE-API-CALL"
+        />
+
+        <ProjectCard
+          title="Streamify"
+          about="Design a basic music streaming platform with modern UI and Responsive designing"
+          tools={["React / Vite", "Tailwind"]}
+          img={musicApp}
+          live="https://streamify-in.vercel.app/"
+          github="https://github.com/HimeshRoy/Streamify-"
         />
       </section>
     </>
