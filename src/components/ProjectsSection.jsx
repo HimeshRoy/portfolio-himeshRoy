@@ -22,7 +22,7 @@ const ProjectsSection = () => {
       imgLink: locallens,
     },
     {
-      title: "NBCA - North BEngal Cloud Academy",
+      title: "NBCA - North Bengal Cloud Academy",
       about:
         "NBCA - North Bengal Cloud Academy is a online E-learning platform",
       tools: ["Next.js", "Node.js", "Express.js", "Tailwind CSS", "TypeScript", "PostgreSQL"],
