@@ -9,6 +9,8 @@ import Potfilio from "../assets/potfolio.png";
 import BananaReview from "../assets/bananaReview.png";
 import CookingPage from "../assets/cookingPage.png";
 import musicApp from "../assets/musicApp.png";
+import locallens from "../assets/locallens.png"
+import nbca from "../assets/nbca.png"
 
 const Projects = () => {
   return (
@@ -16,12 +18,40 @@ const Projects = () => {
       <section className="p-5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
         
         <ProjectCard
+          title="LocalLens"
+          about="LocalLens is a Full Stack web application that helps users discover nearby places, share reviews, ratings and photos, and get recommendations. It includes user authentication, admin management, location-based features, secure APIs, and a responsive user interface."
+          tools={["ReactJs", "Node.js", "Express.js", "Tailwind CSS", "TypeScript", "PostgreSQL"]}
+          img={locallens}
+          live="https://locallensai.in"
+          github="https://github.com/HimeshRoy/LocalLens"
+        />
+
+        <ProjectCard
+          title="NBCA - North Bengal Cloud Academy"
+          about="NBCA - North Bengal Cloud Academy is a online E-learning platform"
+          tools={["Next.js", "Node.js", "Express.js", "Tailwind CSS", "TypeScript", "PostgreSQL"]}
+          img={nbca}
+          live="https://nbca.co.in"
+          github="https://github.com/North-Bengal-Cloud-Academy"
+        />
+
+
+        <ProjectCard
           title="Loom"
           about="A responsive e-commerce platform with clean UI, product browsing, and smooth user experience."
           tools={["HTML5", "Bootstrap", "CSS"]}
           img={Loom}
           live="https://himeshroy.github.io/Loom/"
           github="https://github.com/HimeshRoy/Loom"
+        />
+
+        <ProjectCard
+          title="Personal Portfolio"
+          about="A modern personal portfolio website built to showcase my projects, skills, and journey as a developer. Designed with clean UI, smooth interactions, and responsive layouts to create an engaging user experience."
+          tools={["React / Vite", "Tailwind", "HTML5", "CSS",  "Framer Motion"]}
+          img={Potfilio}
+          live="https://himeshroy.vercel.app/"
+          github="https://github.com/HimeshRoy/portfolio-himeshRoy"
         />
 
         <ProjectCard
@@ -67,15 +97,6 @@ const Projects = () => {
           img={Craveo}
           live="https://himeshroy.github.io/Craveo/"
           github="https://github.com/HimeshRoy/Craveo"
-        />
-
-        <ProjectCard
-          title="Personal Portfolio"
-          about="A modern personal portfolio website built to showcase my projects, skills, and journey as a developer. Designed with clean UI, smooth interactions, and responsive layouts to create an engaging user experience."
-          tools={["React / Vite", "Tailwind", "HTML5", "CSS",  "Framer Motion"]}
-          img={Potfilio}
-          live="https://himeshroy.vercel.app/"
-          github="https://github.com/HimeshRoy/portfolio-himeshRoy"
         />
 
         <ProjectCard

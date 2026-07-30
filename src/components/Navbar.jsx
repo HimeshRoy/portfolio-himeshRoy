@@ -30,7 +30,7 @@ const Navbar = () => {
             </h1>
 
             <p className="text-xs md:text-sm font-semibold text-gray-500">
-              Front-End Developer Fresher
+              Full-Stack Developer
             </p>
           </div>
 

@@ -1,8 +1,11 @@
 import React from "react";
 import Loom from "../assets/loom.png";
-import mm from "../assets/mirthMaker.png";
-import ERP from "../assets/erp.png";
+import locallens from "../assets/locallens.png";
+import nbca from "../assets/nbca.png";
+import { useNavigate } from "react-router-dom";
+
 const ProjectsSection = () => {
+  const navigate = useNavigate();
   const data = [
     {
       title: "Loom",
@@ -12,27 +15,32 @@ const ProjectsSection = () => {
       imgLink: Loom,
     },
     {
-      title: "Mirth & Maker",
+      title: "LocalLens",
       about:
-        "An event management website focused on event discovery, clean layouts, and engaging user experience.",
-      tools: ["HTML5", "CSS", "Bootstrap"],
-      imgLink: mm,
+        "LocalLens is a Full Stack web application that helps users discover nearby places, share reviews, ratings and photos, and get recommendations.",
+      tools: ["ReactJs", "Node.js", "Express.js", "Tailwind CSS", "TypeScript", "PostgreSQL"],
+      imgLink: locallens,
     },
     {
-      title: "ERP (Enterprise Resource Planning)",
+      title: "NBCA - North BEngal Cloud Academy",
       about:
-        "A web-based ERP system designed to manage business processes, user data, and workflow operations efficiently.",
-      tools: ["HTML5", "CSS", "Bootstrap", "JavaScript"],
-      imgLink: ERP,
+        "NBCA - North Bengal Cloud Academy is a online E-learning platform",
+      tools: ["Next.js", "Node.js", "Express.js", "Tailwind CSS", "TypeScript", "PostgreSQL"],
+      imgLink: nbca,
     },
   ];
+
+   const handleNavigation = () => {
+    navigate("/projects");
+  };
 
   return (
     <div className="p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {data.map((each, index) => (
         <div
           key={index}
-          className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-5 hover:scale-105 transition"
+          className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-5 hover:scale-105 transition cursor-pointer"
+          onClick={handleNavigation}
         >
           <div
             className="h-50 bg-cover bg-center rounded-xl"
